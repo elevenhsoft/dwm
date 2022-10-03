@@ -82,7 +82,7 @@ static const char *prev[] = { "playerctl", "previous", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -modes combi -show combi -combi-modes run,drun") },
+	{ MODKEY,                       XK_p,      spawn,          SHCMD("rofi -combi-modi window,drun,ssh -theme sidebar -show combi") },
 	{ MODKEY,             			XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
